@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Redirecionamento</title>
+  <meta name="robots" content="noindex" />
+  <style>
+    :root { --maxw: 680px; }
+    html, body { height: 100%; margin: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: #e2e8f0;
+      display: grid;
+      place-items: center;
+      position: relative;
+      overflow: hidden;
+      background: #2e004f; /* cor base de fundo */
+    }
+
+    /* imagem de fundo em tela cheia */
+    .bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;   /* mostra a imagem inteira */
+      object-position: center;
+      z-index: -1;
+      background: #2e004f;   /* cor atrás da imagem */
+    }
+
+    main {
+      max-width: var(--maxw);
+      text-align: center;
+      padding: 2rem;
+      border-radius: 1.25rem;
+      background: rgba(17,24,39,0.85);
+      box-shadow: 0 10px 25px rgba(0,0,0,.35);
+      z-index: 1;
+    }
+
+    h1 { font-size: clamp(1.5rem, 2.5vw + 1rem, 2.25rem); margin: 0 0 .5rem; }
+    p { margin: 0 0 1.25rem; line-height: 1.5; color: #cbd5e1; font-weight: bold; }
+
+    a.btn {
+      display: inline-block;
+      padding: .9rem 1.25rem;
+      border-radius: .85rem;
+      font-weight: 600;
+      text-decoration: none;
+      background: #22c55e;
+      color: #0b0f19;
+      transition: transform .04s ease, filter .15s ease;
+    }
+    a.btn:hover { filter: brightness(1.05); }
+    a.btn:active { transform: translateY(1px); }
+
+    .logo {
+      max-width: 200px;
+      margin: 0 auto 1.5rem;
+      display: block;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <!-- imagem de fundo -->
+  <img src="https://i.imgur.com/qVaUTmK.jpeg" alt="Fundo Doce Verão Açaíteria Prime" class="bg">
+
+  <main>
+    <!-- logo redonda -->
+    <img src="https://i.imgur.com/Wwmb6hj.jpeg" alt="Logo Doce Verão Açaíteria Prime" class="logo">
+
+    <h1>🍓🥥 Refresque seu dia com o melhor Açaí da cidade! 🥝🍫</h1>
+    <p><b>Clique abaixo e descubra agora nosso cardápio digital cheio de delícias.</b></p>
+
+    <!-- botão de redirecionamento -->
+    <a class="btn" href="https://doceveraoacaiteriaprime.menudino.com" target="_self" rel="noopener" aria-label="Ir para o site de destino">
+      Cardápio Doce Verão Açaíteria Prime
+    </a>
+  </main>
+</body>
+</html>
