@@ -6,15 +6,14 @@
 
 /*
     ## Variáveis de Cores e Fontes
-    Para facilitar a manutenção e padronização.
 */
 :root {
-    --primary-color: #28a745;       /* Cor verde dos botões */
-    --text-color: #fff;             /* Cor principal do texto */
-    --background-veil: rgba(0, 0, 0, 0.35); /* Véu escuro sobre o fundo */
-    --panel-background: rgba(0, 0, 0, 0.7); /* Fundo do painel de informações */
-    --dark-text-color: #0b0f19;     /* Cor de texto para botões */
-    --social-link-color: #fff;      /* Cor dos links sociais */
+    --primary-color: #28a745;
+    --text-color: #fff;
+    --background-veil: rgba(0, 0, 0, 0.35);
+    --panel-background: rgba(0, 0, 0, 0.7);
+    --dark-text-color: #0b0f19;
+    --social-link-color: #fff;
 
     --font-family: 'Roboto', Arial, sans-serif;
     --border-radius: 15px;
@@ -22,7 +21,6 @@
 
 /*
     ## Estilos Gerais do Corpo (body)
-    Define o fundo, cor do texto e fonte padrão.
 */
 body {
     background: url("../img/background.webp") no-repeat center center fixed;
@@ -37,7 +35,6 @@ body {
 
 /*
     ## Layout Principal
-    Container flexbox para os painéis de informação e carrossel.
 */
 .container-custom {
     display: flex;
@@ -54,7 +51,7 @@ body {
     ## Painel de Informações (à esquerda)
 */
 .info-panel {
-    flex: 1 1 380px;
+    flex: 1;
     background: var(--panel-background);
     border-radius: var(--border-radius);
     display: flex;
@@ -115,31 +112,43 @@ body {
 }
 
 /*
-    ## Links de Redes Sociais
+    ## Links de Redes Sociais como Botões
 */
-.social-links {
-    margin-top: 12px;
+.social-links-buttons {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
+    margin-top: 15px;
 }
-.social-links a {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.45rem;
-    color: var(--social-link-color);
-    text-decoration: none;
-    font-weight: 700;
+.btn-social {
+    flex: 1;
 }
-.social-links a:hover {
-    text-decoration: underline;
+.btn-social a {
+    color: var(--dark-text-color); /* Garante que o texto dos botões sociais seja preto */
+}
+
+/*
+    ## Bloco de Destaque com a Descrição
+*/
+.store-description {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: left;
+    max-width: 100%;
+}
+.store-description p {
+    margin-bottom: 0;
 }
 
 /*
     ## Mensagem de Impacto
 */
 .impact-message {
-    margin-top: auto; /* Alinha a mensagem ao final do painel */
+    margin-top: auto;
     text-align: center;
     font-weight: 800;
     font-size: 1.05rem;
@@ -150,7 +159,7 @@ body {
     ## Carrossel de Imagens
 */
 .carousel-custom {
-    flex: 1 1 380px;
+    flex: 1;
     border-radius: var(--border-radius);
     overflow: hidden;
     max-width: 600px;
@@ -175,7 +184,7 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: #25D366; /* Cor oficial do WhatsApp */
+    background: #25D366;
     color: var(--text-color);
     display: flex;
     align-items: center;
@@ -192,8 +201,27 @@ body {
 }
 
 /*
+    ## Cores para Botões de Redes Sociais e Google Maps
+*/
+.btn-google-maps {
+    background: #EA4335;
+}
+.btn-facebook {
+    background: #1877F2;
+}
+.btn-instagram {
+    background: #C13584;
+}
+
+/* Garante que o hover aplique um efeito de escurecimento */
+.btn-google-maps:hover,
+.btn-facebook:hover,
+.btn-instagram:hover {
+    filter: brightness(1.1);
+}
+
+/*
     ## Media Queries (Responsividade)
-    Ajustes para telas menores.
 */
 @media (max-width: 992px) {
     .container-custom {
@@ -202,9 +230,14 @@ body {
         gap: 30px;
     }
     .info-panel, .carousel-custom {
-        max-width: 100%;
+        max-width: 90%;
+        width: 100%;
+        flex: 1 1 auto;
+    }
+    .store-description {
+        text-align: center;
     }
     .impact-message {
-        display: none; /* Oculta a mensagem em telas pequenas, pois o carrossel fica abaixo */
+        display: none;
     }
 }
