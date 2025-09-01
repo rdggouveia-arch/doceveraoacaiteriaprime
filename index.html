@@ -1,165 +1,104 @@
-<!doctype html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Doce Verão Açaíteria Prime</title>
-  
-  <!-- Font Awesome (para os ícones) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doce Verão Açaíteria Prime | Açaí e Sorvetes Gourmet</title>
+    <meta name="description" content="Experimente o melhor açaí da cidade. Deliciosos açaís, cremes e sorvetes para um verão irresistível. Clique e peça online ou visite nossa loja.">
 
-  <style>
-    html, body { margin: 0; height: 100%; font-family: Arial, sans-serif; background: url('https://i.imgur.com/qVaUTmK.jpeg') no-repeat center center/cover; color: #fff; }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: stretch;
-      min-height: 100vh;
-      padding: 2rem;
-      gap: 2rem;
-      background: rgba(0,0,0,0.6);
-    }
-
-    main, .carousel {
-      flex: 1 1 400px;
-      max-width: 600px;
-      border-radius: 1rem;
-      background: rgba(17,24,39,0.85);
-      box-shadow: 0 10px 25px rgba(0,0,0,.35);
-      padding: 2rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    h1 { font-size: 1.8rem; margin-bottom: 1rem; text-align: center; }
-    p { font-weight: bold; margin-bottom: 1.2rem; text-align: center; }
-
-    .logo {
-      max-width: 180px;
-      border-radius: 50%;
-      margin-bottom: 1.5rem;
-    }
-
-    a.btn {
-      display: inline-flex;
-      align-items: center;
-      gap: .5rem;
-      margin: 0.4rem;
-      padding: .8rem 1.2rem;
-      border-radius: .75rem;
-      font-weight: 600;
-      text-decoration: none;
-      background: #22c55e;
-      color: #0b0f19;
-      transition: all 0.2s ease;
-    }
-    a.btn:hover { filter: brightness(1.05); transform: scale(1.05); }
-
-    .social { margin-top: 1rem; }
-    .social a {
-      display: inline-flex;
-      align-items: center;
-      gap: .5rem;
-      margin: 0 .5rem;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .social a:hover { color: #22c55e; }
-
-    /* Carrossel */
-    .carousel { position: relative; overflow: hidden; padding: 0; }
-    .carousel img { width: 100%; height: 100%; object-fit: cover; display: none; border-radius: 1rem; }
-    .carousel img.active { display: block; }
-    .carousel-btn {
-      position: absolute; top: 50%; transform: translateY(-50%);
-      background: rgba(0,0,0,0.5); color: #fff; border: none;
-      font-size: 2rem; padding: 0.5rem; cursor: pointer;
-    }
-    .carousel-btn.prev { left: 10px; }
-    .carousel-btn.next { right: 10px; }
-
-    /* WhatsApp flutuante */
-    .whatsapp {
-      position: fixed; bottom: 20px; right: 20px;
-      background: #25D366; color: white;
-      border-radius: 50%; width: 60px; height: 60px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 30px; text-decoration: none;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      z-index: 1000;
-    }
-  </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+	
+	<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+	
+	<meta property="og:title" content="Doce Verão Açaíteria Prime">
+    <meta property="og:description" content="O melhor açaí da cidade. Uma experiência irresistível com sabores e texturas únicas.">
+    <meta property="og:image" content="https://rdggouveia-arch/doceveraoacaiteriaprime.github.io/assets/img/logo_compartilhamento.webp">
 </head>
 <body>
 
-<div class="container">
-  <!-- Informações -->
-  <main>
-    <img src="https://i.imgur.com/Wwmb6hj.jpeg" alt="Logo Doce Verão Açaíteria Prime" class="logo">
+    <main class="container-fluid container-custom">
+        <section class="info-panel">
+            <img src="assets/img/logo.webp" alt="Logo Doce Verão Açaíteria Prime: Tigela de açaí roxa com frutas.">
+            
+            <h1 class="main-title">🍓 Mais que açaí,</h1>
+            <h1 class="main-title">uma experiência irresistível 🥝</h1>
+            <p class="subtitle"><b>🤩 Clique e peça agora seu açaí premium 😍</b></p>
 
-    <div style="text-align: center;">
-      <h1 style="margin: 0;">🍓 Mais que açaí,</h1>
-      <h1 style="margin: 0;">uma experiência irresistível 🥝</h1>
-    </div>
+            <div class="buttons-group">
+                <a href="https://doceveraoacaiteriaprime.menudino.com" class="btn-custom" target="_blank" rel="noopener noreferrer" aria-label="Ver Cardápio Online">
+                    <i class="fa-solid fa-utensils"></i> Ver Cardápio
+                </a>
+                <a href="http://maps.google.com/maps?q=Doce+Ver%C3%A3o+A%C3%A7a%C3%ADteria+Prime+-+Av.+Dr.+Ismael+Alonso+Y+Alonso,+Franca+-+SP" class="btn-custom btn-google-maps" target="_blank" rel="noopener noreferrer" aria-label="Ver Endereço no Mapa">
+                    <i class="fa-solid fa-location-dot"></i> Como Chegar
+                </a>
+            </div>
+            
+            <div class="social-links-buttons">
+                <a href="https://www.facebook.com/DoceVeraoAcaiteria.prime" class="btn-custom btn-social btn-facebook" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-facebook"></i> Facebook
+                </a>
+                <a href="https://www.instagram.com/doceveraoacaiteria.prime/" class="btn-custom btn-social btn-instagram" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram"></i> Instagram
+                </a>
+            </div>
 
-    <p><b>🤩 Clique e peça agora seu açaí premium 😍</b></p>
+            <div class="store-description">
+                <p>Doce Verão Açaiteria Prime é a sua sorveteria e açaiteria em Franca-SP, especializada em açaí no copo, tigela e diversas combinações com acompanhamentos frescos, além de sorvetes cremosos de alta qualidade. Nosso objetivo é oferecer uma experiência única, com produtos selecionados, variedade de opções e um ambiente acolhedor para toda a família. Seja para se refrescar nos dias quentes ou para aproveitar um lanche saudável e saboroso, somos referência em açaí e sorvetes na região. Trabalhamos com atendimento no local, retirada e delivery, garantindo praticidade e rapidez. Venha conhecer a Doce Verão Açaiteria Prime e descubra por que somos destaque em açaí e sorvetes em Franca-SP.</p>
+            </div>
 
-    <a class="btn" href="https://doceveraoacaiteriaprime.menudino.com"><i class="fas fa-utensils"></i> Ver Cardápio</a>
-    <a class="btn" href="https://maps.app.goo.gl/tVZBsMo9SyHf9R8o7" target="_blank"><i class="fas fa-map-marker-alt"></i> Como Chegar</a>
+            <p class="impact-message">
+                ✨ Dê uma espiada, tem um pouquinho da nossa loja aqui ao lado ➡️
+            </p>
+        </section>
 
-    <div class="social">
-      <a href="https://www.facebook.com/DoceVeraoAcaiteria.prime" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
-      <a href="https://www.instagram.com/doceveraoacaiteria.prime/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-    </div>
-  </main>
+        <section id="carouselExample" class="carousel slide carousel-custom" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/carousel/image1.webp" class="d-block w-100" alt="Vista da fachada da loja Doce Verão, com cores vibrantes e placas convidativas.">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/carousel/image2.webp" class="d-block w-100" alt="Interior da loja Doce Verão, com mesas modernas e ambiente aconchegante.">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/carousel/image3.webp" class="d-block w-100" alt="Detalhe de um copo de açaí com frutas vermelhas, granola e leite condensado.">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/carousel/image4.webp" class="d-block w-100" alt="Açai bowl com mix de frutas tropicais como manga, kiwi e morango.">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/carousel/image5.webp" class="d-block w-100" alt="Colherada de açaí com topping de leite ninho e calda de morango.">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/carousel/image6.webp" class="d-block w-100" alt="Close-up de um sorvete de creme com calda de chocolate e pedaços de biscoito.">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/carousel/image7.webp" class="d-block w-100" alt="Imagem de um cliente satisfeito segurando um copo grande de açaí.">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/carousel/image8.webp" class="d-block w-100" alt="Visão noturna da loja Doce Verão, com iluminação suave e placas de neon.">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" aria-label="Foto Anterior">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" aria-label="Próxima Foto">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </section>
+    </main>
 
-  <!-- Carrossel -->
-  <div class="carousel">
-    <img src="https://i.imgur.com/nAERQXg.jpeg" class="active" alt="Foto 1">
-    <img src="https://i.imgur.com/wmlPzJC.jpeg" alt="Foto 2">
-    <img src="https://i.imgur.com/deJDMUn.jpeg" alt="Foto 3">
-    <img src="https://i.imgur.com/5rq7dWQ.jpeg" alt="Foto 4">
-    <img src="https://i.imgur.com/fUwfwn5.jpeg" alt="Foto 5">
-    <img src="https://i.imgur.com/9UpkqQu.jpeg" alt="Foto 6">
-    <img src="https://i.imgur.com/69yovRg.jpeg" alt="Foto 7">
-    <img src="https://i.imgur.com/g5k17EI.jpeg" alt="Foto 8">
+    <a class="whatsapp-float" href="https://wa.me/5516992831662" target="_blank" rel="noopener noreferrer" aria-label="Abrir conversa no WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
-    <button class="carousel-btn prev">❮</button>
-    <button class="carousel-btn next">❯</button>
-  </div>
-</div>
-
-<!-- WhatsApp -->
-<a class="whatsapp" href="https://wa.me/5516992831662" target="_blank"><i class="fab fa-whatsapp"></i></a>
-
-<script>
-  const images = document.querySelectorAll('.carousel img');
-  let current = 0;
-
-  function showImage(index) {
-    images.forEach((img, i) => img.classList.toggle('active', i === index));
-  }
-
-  document.querySelector('.carousel-btn.next').addEventListener('click', () => {
-    current = (current + 1) % images.length;
-    showImage(current);
-  });
-
-  document.querySelector('.carousel-btn.prev').addEventListener('click', () => {
-    current = (current - 1 + images.length) % images.length;
-    showImage(current);
-  });
-
-  setInterval(() => {
-    current = (current + 1) % images.length;
-    showImage(current);
-  }, 4000);
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
 
 </body>
 </html>
